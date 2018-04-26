@@ -52,6 +52,9 @@ public class XMLValidator {
 			validator.validate(new StreamSource(fileXML));
 			return true;
 		} catch (SAXException se) {
+	
+
+			System.out.println("   Message: " + se.getMessage());
 			return false;
 		} catch (Exception e) {
 			e.printStackTrace();

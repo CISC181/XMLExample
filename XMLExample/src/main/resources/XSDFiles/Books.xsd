@@ -8,19 +8,20 @@
 						<xsd:sequence>
 							<xsd:element name="author" type="xsd:string">
 							</xsd:element>
-							<xsd:element name="title" type="xsd:string" />
+							<xsd:element name="description" type="xsd:string" />
 							<xsd:element name="genre" type="xsd:string" />
+
+
 							<xsd:element name="price">
 								<xsd:simpleType>
-									<xsd:restriction
-										base="xsd:double">
+									<xsd:restriction base="xsd:double">
 										<xsd:minExclusive value="0"></xsd:minExclusive>
-										<xsd:maxExclusive value="100"></xsd:maxExclusive>
+										<xsd:maxExclusive value="120"></xsd:maxExclusive>
 									</xsd:restriction>
 								</xsd:simpleType>
 							</xsd:element>
-							<xsd:element name="publish_date" type="xsd:date" />
-							<xsd:element name="description" type="xsd:string" />
+							<xsd:element name="publish_date" type="xsd:dateTime" />
+							<xsd:element name="title" type="xsd:string" />
 						</xsd:sequence>
 						<xsd:attribute name="id" type="xsd:string" />
 					</xsd:complexType>
